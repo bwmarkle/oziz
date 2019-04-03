@@ -31,7 +31,7 @@ class Oziz_Editor_Scripts
 
         if (! class_exists('_WP_Editors') ) {
             // @codingStandardsIgnoreStart
-            include_once ABSPATH . WPINC . '/class-wp-editor.php';
+			load_template( ABSPATH . WPINC . '/class-wp-editor.php' );
             // @codingStandardsIgnoreEnd
         }
 

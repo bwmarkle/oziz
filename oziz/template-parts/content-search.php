@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('oz-single-post'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('oz-single-post --color-reset'); ?>>
 
     <?php oziz_post_thumbnail(); ?>
 
@@ -26,7 +26,7 @@
     <?php
         if ('post' === get_post_type() ) :
     ?>
-    <footer class="entry-footer">
+    <footer class="entry-footer  --color-reset">
         
             <div class="entry-meta">
                 <?php

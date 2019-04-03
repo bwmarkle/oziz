@@ -177,7 +177,6 @@ function oziz_customizer_custom_fields( $wp_customize,$section_priority = 160 )
                 break;
                 
             case 'datetime':
-                //print_r($control_args); die();
                 unset($control_args['type']);
                 $wp_customize->add_control(new WP_Customize_Date_Time_Control($wp_customize, $field_name, $control_args));
                 break;

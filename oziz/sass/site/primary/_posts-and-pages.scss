@@ -4,6 +4,13 @@
 	margin:0;
 	padding:0;
 	line-height:1.2;
+	a {
+		color:$color__link;
+	}
+	a:hover,
+	a:focus {
+		color:$color__link-hover;
+	}
 }
 p.site-description {
 	font-size: 16px;
@@ -36,6 +43,7 @@ p.site-description {
 	* {
 		max-width: 100%;
 	}
+	/*
 	a {
 		text-decoration: underline;
 		color: $color__link-hover;
@@ -43,6 +51,7 @@ p.site-description {
 			color: $color__link;
 		}
 	}
+	*/
 }
 
 .oz-single-post {
@@ -60,7 +69,7 @@ p.site-description {
 		span {
 			margin-right:10px;
 		}
-
+		
 		.tags-links {
 			padding:6px 0;
 			font-weight:700;
@@ -82,4 +91,14 @@ p.site-description {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.posts-navigation {
+	a {
+		color:$color__link;
+	}
+	a:hover,
+	a:focus {
+		color:$color__link-hover;
+	}
 }

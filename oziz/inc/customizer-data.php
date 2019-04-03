@@ -127,7 +127,15 @@ function oziz_customizer_get_data()
          ),
          'default' => 'right',
      );
-
+	$oziz_data['general']['fields']['general_menu_type'] = array(
+         'type'    => 'select',
+         'label'   => esc_html__( 'Menu Type' , 'oziz'),
+         'choices' => array(
+             'fixed' => esc_html__( 'Fixed', 'oziz'),  
+			 'notfixed' => esc_html__( 'Not Fixed' , 'oziz'),
+         ),
+         'default' => 'fixed',
+     );
     // Teaser
     $oziz_data['teaser']['title'] = esc_html__('Teaser', 'oziz');
     $oziz_data['teaser']['panel'] = 'oziz_options';
@@ -528,7 +536,7 @@ function oziz_customizer_get_data()
         'type'    => 'repeatable',
         'label'   => esc_html__('Experience List', 'oziz'),
         'title_format'  => esc_html__('[live_title]', 'oziz'), // [live_title]
-        'max_item'      => 10, // Maximum item can add
+        'max_item'      => 20, // Maximum item can add
         'fields'    => array(
             'year1' => array(
                 'title' => esc_html__('From Year', 'oziz'),
@@ -646,7 +654,7 @@ function oziz_customizer_get_data()
         'type'    => 'repeatable',
         'label'   => esc_html__('Skill List 1', 'oziz'),
         'title_format'  => esc_html__('[live_title]', 'oziz'), // [live_title]
-        'max_item'      => 10, // Maximum item can add
+        'max_item'      => 20, // Maximum item can add
         'fields'    => array(
             'skill' => array(
                 'title' => esc_html__('Skill', 'oziz'),
@@ -677,7 +685,7 @@ function oziz_customizer_get_data()
         'type'    => 'repeatable',
         'label'   => esc_html__('Skill List 2', 'oziz'),
         'title_format'  => esc_html__('[live_title]', 'oziz'), // [live_title]
-        'max_item'      => 10, // Maximum item can add
+        'max_item'      => 20, // Maximum item can add
         'fields'    => array(
             'skill' => array(
                 'title' => esc_html__('Skill', 'oziz'),
@@ -708,7 +716,7 @@ function oziz_customizer_get_data()
         'type'    => 'repeatable',
         'label'   => esc_html__('Skill List 3', 'oziz'),
         'title_format'  => esc_html__('[live_title]', 'oziz'), // [live_title]
-        'max_item'      => 10, // Maximum item can add
+        'max_item'      => 20, // Maximum item can add
         'fields'    => array(
             'skill' => array(
                 'title' => esc_html__('Skill', 'oziz'),
@@ -810,7 +818,7 @@ function oziz_customizer_get_data()
         'type'    => 'repeatable',
         'label'   => esc_html__('Data', 'oziz'),
         'title_format'  => esc_html__('[live_title]', 'oziz'), // [live_title]
-        'max_item'      => 10, // Maximum item can add
+        'max_item'      => 20, // Maximum item can add
         'fields'    => array(
             'text' => array(
                 'title' => esc_html__('Text', 'oziz'),
@@ -868,7 +876,7 @@ function oziz_customizer_get_data()
     'type'    => 'repeatable',
     'label'   => esc_html__('Data', 'oziz'),
     'title_format'  => esc_html__('[live_title]', 'oziz'), // [live_title]
-        'max_item'      => 10, // Maximum item can add
+        'max_item'      => 20, // Maximum item can add
         'fields'    => array(
             'text' => array(
                 'title' => esc_html__('Text', 'oziz'),
@@ -926,7 +934,7 @@ function oziz_customizer_get_data()
         'type'    => 'repeatable',
         'label'   => esc_html__('Data', 'oziz'),
         'title_format'  => esc_html__('[live_title]', 'oziz'), // [live_title]
-        'max_item'      => 10, // Maximum item can add
+        'max_item'      => 20, // Maximum item can add
         'fields'    => array(
             'text' => array(
                 'title' => esc_html__('Text', 'oziz'),
@@ -984,7 +992,7 @@ function oziz_customizer_get_data()
         'type'    => 'repeatable',
         'label'   => esc_html__('Data', 'oziz'),
         'title_format'  => esc_html__('[live_title]', 'oziz'), // [live_title]
-        'max_item'      => 10, // Maximum item can add
+        'max_item'      => 20, // Maximum item can add
         'fields'    => array(
             'text' => array(
                 'title' => esc_html__('Text', 'oziz'),
@@ -1053,7 +1061,7 @@ function oziz_customizer_get_data()
         'type'    => 'repeatable',
         'label'   => esc_html__('Data', 'oziz'),
         'title_format'  => esc_html__('[live_title]', 'oziz'), // [live_title]
-          'max_item'      => 10, // Maximum item can add
+          'max_item'      => 20, // Maximum item can add
           'fields'    => array(
             'name' => array(
               'title' => esc_html__('Name', 'oziz'),
@@ -1117,7 +1125,7 @@ function oziz_customizer_get_data()
         'type'    => 'repeatable',
         'label'   => esc_html__('Team Member List', 'oziz'),
         'title_format'  => esc_html__('[live_title]', 'oziz'), // [live_title]
-        'max_item'      => 4, // Maximum item can add
+        'max_item'      => 40, // Maximum item can add
         'fields'    => array(
             'team_pic' => array(
                 'title' => esc_html__('User media', 'oziz'),
@@ -1136,7 +1144,7 @@ function oziz_customizer_get_data()
             ),
             'desc' => array(
                 'title' => esc_html__('Description', 'oziz'),
-                'type'  =>'textarea',
+                'type'  =>'editor',
                 'desc'  => '',
             ),
             'social_icon_1' => array(

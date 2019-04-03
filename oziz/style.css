@@ -3,8 +3,8 @@ Theme Name: Oziz
 Theme URI: http://wpamanuke.com/oziz-wordpress-theme/
 Author: wpamanuke
 Author URI: http://wpamanuke.com
-Description: Oziz is one page WordPress theme for resume cv. It responsive based on bootstrap. It has Custom HomePage which you can use to put video , education, experience , biography , skills, testimonials, pricing table and contact info. This theme is suitable for landing page or you who are looking for jobs by showing your skill and resume portofolio
-Version: 1.0.0
+Description: Oziz is a one page WordPress theme for resumes / cv. It's responsive, and based on bootstrap. It has a Custom HomePage which you can use to put video, education, experience, biography, skills, testimonials, a pricing table, and contact info. This theme is suitable as a landing page or for those of you looking for jobs by showing your skill and resume portfolio.
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: oziz
@@ -1394,16 +1394,23 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #333333;
+  color: #e74c3c;
   text-decoration: none; }
   a:visited {
-    color: #333333; }
-  a:hover, a:focus, a:active {
     color: #e74c3c; }
+  a:hover, a:focus, a:active {
+    color: #333333; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
+
+.--color-reset a {
+  color: #333333; }
+
+.--color-reset a:hover,
+.--color-reset a:focus {
+  color: #e74c3c; }
 
 /*--------------------------------------------------------------
 ## Menus
@@ -1459,14 +1466,14 @@ a {
     .main-navigation a {
       display: block;
       text-decoration: none; }
-    .main-navigation #primary-menu > li > a {
+    .main-navigation .nav-menu > li > a {
       padding: 8px 10px;
       text-transform: uppercase;
       font-size: 16px;
       font-weight: 600; } }
 
 @media screen and (max-width: 576px) {
-  .menu-all-pages-container {
+  .menu-all-pages-container, .main-navigation > .menu {
     max-height: 300px;
     overflow: auto; }
   /* Small menu. */
@@ -1669,6 +1676,11 @@ a {
   margin: 0;
   padding: 0;
   line-height: 1.2; }
+  .site-title a {
+    color: #333333; }
+  .site-title a:hover,
+  .site-title a:focus {
+    color: #e74c3c; }
 
 p.site-description {
   font-size: 16px;
@@ -1693,20 +1705,20 @@ p.site-description {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0; }
+  margin: 1.5em 0 0;
+  /*
+	a {
+		text-decoration: underline;
+		color: $color__link-hover;
+		&:hover {
+			color: $color__link;
+		}
+	}
+	*/ }
   .page-content *,
   .entry-content *,
   .entry-summary * {
     max-width: 100%; }
-  .page-content a,
-  .entry-content a,
-  .entry-summary a {
-    text-decoration: underline;
-    color: #e74c3c; }
-    .page-content a:hover,
-    .entry-content a:hover,
-    .entry-summary a:hover {
-      color: #333333; }
 
 .oz-single-post {
   margin: 0 0 67px; }
@@ -1736,6 +1748,22 @@ p.site-description {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+.posts-navigation a {
+  color: #333333; }
+
+.posts-navigation a:hover,
+.posts-navigation a:focus {
+  color: #e74c3c; }
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.alignwide {
+  width: 100%; }
+
+.alignfull {
+  width: 100%; }
 
 /*--------------------------------------------------------------
 ## Comments
@@ -2146,7 +2174,7 @@ a.oz-video-button {
   border: 1px solid #ffffff;
   font-weight: 700;
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 10px 10px;
   transition: 0.4s;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4); }
   a.oz-video-button:hover {

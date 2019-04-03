@@ -5,7 +5,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 Requires at least: 5.1
 Tested up to: 5.1.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -13,7 +13,7 @@ Oziz One Page Landing Page WordPress Theme for resume , skill and portfolio
 
 == Description ==
 
-Oziz is One Page Resume CV WordPress Theme. It has Custom HomePage which you can use to put video , education, experience , biography , skills, testimonials, pricing table and contact info. This theme is suitable for landing page or you who are looking for jobs to show portfolio and resume. The design is simple based on bootstrap and fontawesome. Demo : http://reviews.wpamanuke.com/homepage/
+Oziz is a one page WordPress theme for resumes / cv. It's responsive, and based on bootstrap. It has a Custom HomePage which you can use to put video, education, experience, biography, skills, testimonials, a pricing table, and contact info. This theme is suitable as a landing page or for those of you looking for jobs by showing your skill and resume portfolio. Demo : http://reviews.wpamanuke.com/homepage/
 
 == Installation ==
 
@@ -41,6 +41,8 @@ For each section , you need create anchor link like this :
 
 = 1.0 - March 12 2019 =
 * Initial release
+= 1.0.1 - April 03 2019 =
+* Fix Color, Gallery, Default Menu Spacing
 
 == Credits ==
 
@@ -54,3 +56,4 @@ For each section , you need create anchor link like this :
 * Font Awesome 4.7.0 ,Created by @davegandy, http://fontawesome.io - @fontawesome , [MIT License](http://fontawesome.io/license) Font: SIL OFL 1.1, CSS: MIT License
 * Images for theme Screenshot | Source: https://stocksnap.io/ , License: CC0 1.0 Universal / Public Domain Dedication / GPL Compatible , [CC0 1.0 Universal] (https://creativecommons.org/publicdomain/zero/1.0/)
     - https://stocksnap.io/photo/DEQF28Z7U9
+* Dummy Images for profil/team | Source : Own Made , GPL

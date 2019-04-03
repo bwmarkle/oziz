@@ -10,7 +10,10 @@ var THEMEOZIZ = THEMEOZIZ || {};
             THEMEOZIZ.header.video();
             THEMEOZIZ.header.menu();
             THEMEOZIZ.header.skip_link();
-            THEMEOZIZ.header.header_v1();
+			
+            if (oziz_vars.header_menu_type == 'fixed') {
+				THEMEOZIZ.header.header_v1();
+			}
             
         },
         video : function () {

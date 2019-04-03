@@ -29,7 +29,7 @@ if (! function_exists('oziz_posted_on') ) :
         $posted_on = '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' .  $time_string  . '</a>';
         
 
-        echo '<span class="posted-on"><i class="fa fa-calendar"></i>' . $posted_on . '</span>'; // WPCS: XSS OK.
+        echo '<span class="posted-on"><i class="fa fa-calendar"></i>' . wp_kses_post( $posted_on ). '</span>'; // WPCS: XSS OK.
 
     }
 endif;
@@ -42,7 +42,7 @@ if (! function_exists('oziz_posted_by') ) :
     {
         $byline = '<span class="author vcard"><a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span>';
 
-        echo '<span class="byline"><i class="fa fa-user"></i> ' . $byline . '</span>'; // WPCS: XSS OK.
+        echo '<span class="byline"><i class="fa fa-user"></i> ' . wp_kses_post( $byline ). '</span>'; // WPCS: XSS OK.
 
     }
 endif;
@@ -58,7 +58,7 @@ if (! function_exists('oziz_posted_category') ) :
             $categories_list = get_the_category_list(esc_html__(', ', 'oziz'));
             if ($categories_list ) {
                 /* translators: 1: list of categories. */
-                printf('<span class="cat-links"><i class="fa fa-briefcase"></i>' . $categories_list . '</span>'); // WPCS: XSS OK.
+                printf('<span class="cat-links"><i class="fa fa-briefcase"></i>' . wp_kses_post( $categories_list ). '</span>'); // WPCS: XSS OK.
             }
         }
     }

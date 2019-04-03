@@ -33,7 +33,7 @@
                     </header><!-- #masthead -->
                 </div>
                 <div class="oz-col-md-8">
-                    <nav id="site-navigation" class="main-navigation">
+                    <nav id="site-navigation" class="main-navigation --color-reset">
                         <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'oziz'); ?></button>
         <?php
         wp_nav_menu(

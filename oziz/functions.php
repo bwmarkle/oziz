@@ -85,7 +85,7 @@ if (! function_exists('oziz_setup') ) :
         );
         /* Style For WP Editor */
         add_editor_style();
-        
+        add_theme_support( 'align-wide' );
         // Set up the WordPress core custom background feature.
         add_theme_support( "custom-background" , apply_filters(
                 'oziz_custom_background_args', array(
@@ -153,7 +153,11 @@ function oziz_scripts()
     wp_enqueue_script('jquery.mb.YTPlayer', get_template_directory_uri() . '/public/js/jquery.mb.YTPlayer.js', array('jquery'), '20151215', true);
     wp_enqueue_script('jquery.tcycle', get_template_directory_uri() . '/public/js/jquery.tcycle.js', array('jquery'), '20151215', true);
     wp_enqueue_script('oziz-script', get_template_directory_uri() . '/public/js/script.js', array('jquery'), '20151215', true);
-
+	$oziz_data_passed = array(
+		'header_menu_type'            => get_theme_mod( 'general_menu_type' , 'fixed' )
+	);
+	wp_localize_script( 'oziz-script', 'oziz_vars', $oziz_data_passed );
+	
     if (is_singular() && comments_open() && get_option('thread_comments') ) {
         wp_enqueue_script('comment-reply');
     }

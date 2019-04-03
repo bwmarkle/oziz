@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('oz-single-post'); ?>>
     <?php oziz_post_thumbnail(); ?>
     
-    <header class="entry-header">
+    <header class="entry-header  --color-reset">
     <?php
     if (is_singular() ) :
         the_title('<h1 class="entry-title">', '</h1>');
@@ -50,7 +50,7 @@
     ?>
     </div><!-- .entry-content -->
     
-    <footer class="entry-footer">
+    <footer class="entry-footer --color-reset">
         <?php
         if ('post' === get_post_type() ) :
             ?>

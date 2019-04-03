@@ -35,11 +35,9 @@ endif;
             )
         );
         
-        $dropdown = wp_dropdown_pages( // WPCS: XSS OK
-            $dropdown_args 
-        );
+        $dropdown = wp_dropdown_pages($dropdown_args);// WPCS: Input var okay.
         $dropdown = str_replace('<select', '<select ' . $this->get_link(), $dropdown);
-        echo wp_kses_post($dropdown);
+        echo wp_kses_post( $dropdown );
 
         ?></label><?php
 
