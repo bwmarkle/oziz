@@ -1,0 +1,72 @@
+.oz-block-teaser {
+	width:100%;
+	background-color: #f6f6f6;
+	h2 {
+		font-size: 38px;
+		color: #606060;
+		font-weight: 900;
+		margin:30px 0 5px;
+		padding: 0;
+		text-transform: uppercase;
+	}
+	span {
+		font-size: 16px;
+		color: #bcbcbc;
+		font-weight: 700;
+		margin:0 0 36px;
+		padding: 0;
+		display:block;
+		text-transform: uppercase;
+	}
+}
+
+.oz-slogan {
+	h3 {
+		color: #404040;
+		font-size: 30px;
+		font-weight: 700;
+		margin-top: 30px;
+		
+		span {
+			color: #e74c3c;
+		}
+	}
+	h4 {
+		color: #a0a0a0;
+		font-size: 18px;
+		font-weight: 300;
+		margin-bottom: 40px;
+	}
+	
+}
+.oz-slogan-small {
+	color: #e74c3c;
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 30px;
+	
+	span {
+		display: inline-block;
+		position: relative;  
+		font-weight:800;
+		font-size:20px;
+		text-transform: uppercase;
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			height: 50%;
+			border-bottom: 1px solid #e74c3c;
+			top: 0;
+			width: 40px;
+		}
+		&:before {
+			right: 100%;
+			margin-right: 15px;
+		}
+		&:after {
+			left: 100%;
+			margin-left: 15px;
+		}
+	}
+}
+

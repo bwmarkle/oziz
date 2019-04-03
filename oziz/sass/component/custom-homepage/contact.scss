@@ -1,0 +1,21 @@
+.oz-contact-info {
+	ul {
+		list-style:none;
+		margin:0;
+		padding:0;
+		li:after {
+			content:' ';
+			clear:both;
+		}
+	}
+	label {
+		width:100px;
+		float:left;
+		display:block;
+		font-weight:bold;
+	}
+	span {
+		margin-left:110px;
+		display:block;
+	}
+}

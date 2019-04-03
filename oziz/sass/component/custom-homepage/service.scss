@@ -1,0 +1,42 @@
+.oz-service {
+	display:block;
+	margin-bottom: 20px;
+	&:hover {
+		.oz-service-left {
+			background-color:#e74c3c;
+		}
+		.oz-service_title {
+			color:#e74c3c;
+		}
+	}
+}
+.oz-service-left {
+	width:70px;
+	height:70px;
+	line-height:70px;
+	font-size:40px;
+	text-align:center;
+	background-color:#606060;
+	color:#FEFEFE;
+	border-radius:5px;
+	transition: background-color 0.6s;
+	margin-right: 15px;
+	float:left;
+}
+.oz-service-right {
+	
+	
+	
+	p {
+		margin-top: 3px;
+		margin-bottom: 10px;
+	}
+}
+.oz-service_title {
+	font-size:18px;
+	font-weight:700;
+	margin-bottom:8px;
+	margin-top:0px;
+	transition:0.4s;
+	display:inline;
+}

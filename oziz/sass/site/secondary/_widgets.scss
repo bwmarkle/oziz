@@ -1,0 +1,40 @@
+.widget {
+	* {
+		max-width: 100%;
+	}
+	margin:0;
+	padding:0 0 70px;
+	.widget-title {
+		font-size:24px;
+		color: #E74C3C;
+		margin-bottom:30px;
+	}
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+	
+	ul,ol {
+		list-style-type: none;
+		margin:0;
+		padding:0;
+		font-size:16px;
+		li {
+			padding:7px 0;
+			border-bottom:1px solid #F4F4F4;
+			color:#999999;
+			a {
+				color:#999999;
+				&:hover {
+					color: #E74C3C; 
+				}
+			}
+		}
+		ul li {
+			padding-left:20px;
+			border-bottom-width:0px;
+		}
+		
+		
+	}
+}

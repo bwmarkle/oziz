@@ -1,0 +1,92 @@
+.oz-pricing {
+	list-style: none outside none !important;
+	padding: 0;
+	margin: 0 0 60px;
+	>li {
+		text-align: center;
+
+		width: 100%;
+		padding:10px;
+	}
+	
+}
+
+.oz-pricing-price {
+	background-color: #b6b6b6;
+	color: #303030;
+	border-radius: 5px 5px 0px 0px;
+	padding: 20px 0;	
+}
+
+.oz-pricing_price_sign {
+	font-size: 20px;
+	position: relative;
+	top: -13px;
+	margin-right: 5px;
+}
+.oz-pricing_price_amount {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+
+
+.oz-pricing_plan {
+	background-color: #9f9f9f;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 700;
+}
+.oz-pricing_row_1 {
+	color: #797878;
+	background-color: #e6e6e6;
+	
+}
+.oz-pricing_row_2 {
+	color: #797878;
+	background-color: #f0f0f0;
+
+}
+.oz-pricing_buy_now {
+	background-color: #b6b6b6;
+	border-radius: 0px 0px 5px 5px;
+	a {
+		color: #808080;
+		background-color: #ffffff;
+		padding: 8px 20px;
+		border-radius: 3px;
+		margin: 20px;
+		display: inline-block;
+		font-weight: 700;
+		box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+		transition: 0.4s;
+		text-decoration:none;
+		&:hover {
+			text-decoration:none;
+			background-color:#404040;
+			color:#ffffff;
+			transition:0.4s;
+		}
+	}
+}
+
+.oz-pricing.oz-pricing-selected {
+	.oz-pricing-price {
+		background-color: #e74c3c;
+	}
+	.oz-pricing_plan {
+		background-color: #DB3A2B;
+	}
+	.oz-pricing_buy_now {
+		background-color: #e74c3c;
+		a {
+			background-color: #ffffff;
+			color: #e74c3c;
+			&:hover {
+				background-color:#404040;
+				color:#ffffff;
+				transition:0.4s;
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.comment-content {
+	a {
+		word-wrap: break-word;
+	}
+	p:last-child {
+		margin-bottom:0;
+	}
+}
+.bypostauthor {
+	display: block;
+}
+.comment-meta {
+	img {
+		float:left;
+		margin-right:20px;
+		margin-bottom:20px;
+	}
+	&:after {
+		content:' ';
+		clear:both;
+	}
+}
+
+.comment-list {
+	list-style:none;
+	margin:0;
+	padding:0;
+	ol.children {
+		margin-left:30px;
+		list-style:none;
+	}
+	li {
+		margin-bottom:20px;
+	}
+}
+.comment-form {
+	label {
+		display:block;
+	}
+	input[type="text"],
+	input[type="url"],
+	input[type="email"]	{
+		width:100%;
+	}
+}

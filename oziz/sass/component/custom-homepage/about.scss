@@ -1,0 +1,58 @@
+.oz-block-one {
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.oz-bg {
+	background-color: rgba(0,0,0,0.9);
+}
+.oz-p {
+	font-size:16px;
+	line-height: $font__line-height-body;
+	margin-bottom:20px;
+}
+.oz-profile-bio {
+	margin:0 auto 30px;
+	text-align:center;
+	background-color: #e74c3c;
+	color:#ffffff;
+	display:table;
+	
+}
+.oz-profile-bio-info {
+	padding: 5px 10px 20px;
+	
+	h3 {
+		margin:0px;
+		padding:0px;
+		margin-top:20px;
+		text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+		font-size: 22px;
+		margin-bottom: 5px;
+	}
+	span {
+		color: #101010;
+		font-size: 16px;
+		font-weight: 300;
+	}
+	.oz-line-white {
+		width: 67px;
+		border-bottom: 1px solid #ffffff;
+		margin: 10px auto 0px;
+	}
+}
+.oz-profile {
+	margin:0 0 30px;
+	text-align:center;
+}
+.oz-profile-image {
+	i.fa {
+		font-size:60px;
+	}
+}
+.oz-profile-desc {
+	label {
+		font-weight:bold;
+	}
+	span {
+	}
+}

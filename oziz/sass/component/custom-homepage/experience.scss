@@ -1,0 +1,57 @@
+.oz-experience {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	z-index:2;
+	&:after {
+		content: "";
+		position: absolute;
+		height: 100%;
+		border-right: 2px solid #e74c3c;
+		top: 0;
+		
+		width: 50px;
+		z-index:-1;
+	}
+	
+}
+
+.oz-experience-left {
+	width: 100px;
+	background-color: #e74c3c;
+	border-radius: 3px;
+	color: #ffffff;
+	text-align: center;
+	z-index:2;
+}
+.oz-experience-year {
+	background-color: #e74c3c;
+	border-radius: 3px;
+	margin: 3px;
+	padding: 10px;
+	border: 1px solid
+}
+.oz-experience-right {
+	margin-left: 115px;
+	margin-bottom: 30px;
+	
+}
+
+.oz-experience_t1 {
+	font-size: 24px;
+	color: #505050;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 8px;
+}
+.oz-experience_t2 {
+	font-size: 18px;
+	color: #9f9f9f;
+	line-height: 1.2;
+	margin-bottom: 5px;
+}
+.oz-experience_t3 {
+	font-size: 18px;
+	color: #9f9f9f;
+	line-height: 1.2;
+}

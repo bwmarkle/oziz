@@ -1,0 +1,22 @@
+.oz-ul-testimonial {
+    color:#ffffff;
+    text-align: center;
+    width:100%;
+    list-style: none;
+    li {
+        width:100%;
+        .oz-p {
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        a {
+            color: #e74c3c;
+        }
+    }
+}

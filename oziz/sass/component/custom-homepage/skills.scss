@@ -1,0 +1,28 @@
+.oz-skill_heading {
+	font-size: 24px;
+	color: #505050;
+	font-weight: 700;
+	margin-bottom: 30px;
+	margin-top: 0px;
+}
+.oz-skill-1 {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+.oz-skill-1_bar-container {
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
+	background-color: #ccc;
+}
+.oz-skill-1_bar {
+	background-color: #e74c3c;
+	border-radius: 0px 4px 4px 0px;
+	padding:10px;
+	text-align: left;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.2;
+}
